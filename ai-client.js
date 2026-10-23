@@ -1,6 +1,6 @@
 // Set this ONCE after deploying the NEW dedicated Cloudflare Worker.
 // Example value must be your real URL, never a made-up address.
-const AI_API_URL = "ЖАҢА_CLOUDFLARE_WORKER_URL";
+const AI_API_URL = "https://tarihcheck-ai-new.vp5vy7g7db.workers.dev";
 async function askTarihAI(question, options = {}) {
   if (!AI_API_URL.startsWith("https://")) throw new Error("AI серверінің URL-і сайт иесі тарапынан әлі орнатылмаған.");
   const controller = new AbortController();
